@@ -5,16 +5,16 @@ Priority: optional
 Build-Depends:
  debhelper (>= 11),
  cmake (>= 2.8.11),
- make,
- gcc,
+ make (>=4),
+ gcc (>=8),
  libldap2-dev,
  libpam-dev
 Standards-Version: 4.1.3
 Homepage: https://github.com/devgateway/pam-param
 
 Package: pam-param
-Architecture: all
-Depends: libpam, libldap2, ${misc:Depends}
+Architecture: amd64
+Depends: libpam, libldap2, ${misc:Depends}, ${shlibs:Depends}
 Suggests: getauthorizedkeys
 Description: PAM module for parametrized LDAP lookups
  This module allows for project-based authorization from LDAP.
