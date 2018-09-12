@@ -1,6 +1,10 @@
 #!/usr/bin/make -f
 override_dh_auto_configure:
-	dh_auto_configure -- -DCONFIGFILE:FILE=/etc/security/pam-param.ini
+	dh_auto_configure -- -DCONFIGFILE:FILE=/etc/security/pam_param.ini
+
+override_dh_fixperms:
+	dh_fixperms
+	chmod 0600 debian/pam-param/etc/security/pam_param.ini
 
 %:
 	dh $@
