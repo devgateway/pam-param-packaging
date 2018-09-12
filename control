@@ -22,3 +22,9 @@ Description: PAM module for configurable LDAP account lookups
  the user and current host, then search for entries which have these DNs in
  their attributes, e.g. member. It also allows defining a search for super admin
  accounts which will have access to any host.
+
+Package: pam-param-test
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}, pam-param
+Description: Test utility for %name PAM module
+ Account facility test utility for pam_param PAM module.

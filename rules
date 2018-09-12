@@ -6,5 +6,10 @@ override_dh_fixperms:
 	dh_fixperms
 	chmod 0600 debian/pam-param/etc/security/pam_param.ini
 
+override_dh_install:
+	mkdir -p debian/tmp/etc/pam.d
+	cp samples/pam_param_test.pam debian/tmp/etc/pam.d/pam_param_test
+	dh_install
+
 %:
 	dh $@
