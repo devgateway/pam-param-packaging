@@ -12,7 +12,7 @@ Build-Depends:
 Standards-Version: 4.1.3
 Homepage: https://github.com/devgateway/pam-param
 
-Package: pam-param
+Package: libpam-param
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Suggests: getauthorizedkeys
@@ -23,8 +23,8 @@ Description: PAM module for configurable LDAP account lookups
  their attributes, e.g. member. It also allows defining a search for super admin
  accounts which will have access to any host.
 
-Package: pam-param-test
+Package: libpam-param-test
 Architecture: any
-Depends: ${misc:Depends}, ${shlibs:Depends}, pam-param
-Description: Test utility for %name PAM module
+Depends: ${misc:Depends}, ${shlibs:Depends}, libpam-param
+Description: Test utility for pam-param PAM module
  Account facility test utility for pam_param PAM module.

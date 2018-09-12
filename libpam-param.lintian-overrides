@@ -1,0 +1,2 @@
+# INI file may contain LDAP bind password
+libpam-param: non-standard-file-perm etc/security/pam_param.ini 0600 != 0644

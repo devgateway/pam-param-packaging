@@ -1,5 +1,11 @@
 pam-param (0.3) unstable; urgency=medium
 
+  * Renamed package to libpam-param
+
+ -- Styopa Semenukha <ssemenukha@developmentgateway.org>  Wed, 12 Sep 2018 17:38:31 -0400
+
+pam-param (0.3) unstable; urgency=medium
+
   * Updated upstream
 
  -- Styopa Semenukha <ssemenukha@developmentgateway.org>  Wed, 12 Sep 2018 12:12:41 -0400
