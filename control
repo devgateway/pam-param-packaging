@@ -14,7 +14,11 @@ Homepage: https://github.com/devgateway/pam-param
 
 Package: pam-param
 Architecture: amd64
-Depends: libpam, libldap2, ${misc:Depends}, ${shlibs:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Suggests: getauthorizedkeys
-Description: PAM module for parametrized LDAP lookups
- This module allows for project-based authorization from LDAP.
+Description: PAM module for configurable LDAP account lookups
+ This PAM module provides account service using configurable LDAP lookups. It's
+ designed to look up role-based permissions in LDAP. It will determine DNs of
+ the user and current host, then search for entries which have these DNs in
+ their attributes, e.g. member. It also allows defining a search for super admin
+ accounts which will have access to any host.
