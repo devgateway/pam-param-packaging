@@ -1,4 +1,5 @@
 pam-param
+pam-param-test
 *debhelper*
 files
 *.substvars
