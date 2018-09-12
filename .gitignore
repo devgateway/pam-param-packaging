@@ -1,0 +1,4 @@
+pam-param
+*debhelper*
+files
+*.substvars
