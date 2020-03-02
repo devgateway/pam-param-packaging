@@ -1,3 +1,10 @@
+pam-param (0.4) unstable; urgency=medium
+
+  * Corrected package contents
+  * Updated upstream
+
+ -- Styopa Semenukha <ssemenukha@developmentgateway.org>  Mon, 02 Mar 2020 15:45:27 -0500
+
 pam-param (0.3) unstable; urgency=medium
 
   * Renamed package to libpam-param
