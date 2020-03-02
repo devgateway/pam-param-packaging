@@ -1,1 +1,2 @@
+usr/lib/*/security/pam_param.so
 samples/pam_param.ini /etc/security
