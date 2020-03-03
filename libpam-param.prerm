@@ -1,0 +1,10 @@
+#!/bin/sh
+
+set -e
+
+if [ "$1" = "remove" ] && \
+[ "$(dpkg-query --show libpam-param 2> /dev/null | wc -l)" = 1 ]; then
+	pam-auth-update --package --remove pam_param
+fi
+
+#DEBHELPER#

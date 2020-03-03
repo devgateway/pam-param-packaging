@@ -1,2 +1,3 @@
 usr/lib/*/security/pam_param.so
-samples/pam_param.ini /etc/security
+debian/pam-auth-update/pam_param usr/share/pam-configs
+samples/pam_param.ini etc/security

@@ -1,0 +1,12 @@
+#!/bin/sh
+
+set -e
+
+CONFFILE=/etc/security/pam_param.ini
+
+if [ "$1" = "purge" ] && \
+[ "$(dpkg-query --show libpam-param 2> /dev/null | wc -l)" = 1 ]; then
+        rm -f $CONFFILE
+fi
+
+#DEBHELPER#
