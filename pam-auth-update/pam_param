@@ -1,6 +1,6 @@
 Name: Parametrized LDAP Accounting
 Default: yes
-Priority: 640
+Priority: 128
 Account-Type: Primary
 Account:
-	[success=done service_err=ignore default=bad] pam_param.so
+	[success=done perm_denied=bad default=ignore] pam_param.so

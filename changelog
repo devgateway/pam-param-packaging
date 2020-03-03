@@ -1,3 +1,11 @@
+pam-param (0.4+nmu1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Added pam-auth-update config
+  * Added maintainer scripts
+
+ -- Styopa Semenukha <ssemenukha@developmentgateway.org>  Mon, 02 Mar 2020 19:27:45 -0500
+
 pam-param (0.4) unstable; urgency=medium
 
   * Corrected package contents
